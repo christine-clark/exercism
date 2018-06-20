@@ -1,5 +1,5 @@
 # Exercism Solutions
-Challenging myself with coding exercises available in different languages at exercism.io. 
+Challenging myself with coding exercises available in different languages at [exercism.io](http://exercism.io/). 
 
 ## Getting Started
 Exercism provides hands-on coding exercises for both advancing skills in a language you already know or learning a new language by doing. 
