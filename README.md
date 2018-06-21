@@ -10,4 +10,5 @@ If you are new to exercism, read more on [How It Works](http://exercism.io/how-i
 
 | Language  | Exercise |
 | ------------- | ------------- |
+| JavaScript  | [Food Chain](https://github.com/christine-clark/exercism/tree/master/javascript/food-chain) |
 | JavaScript  | [Secret Handshake](https://github.com/christine-clark/exercism/tree/master/javascript/secret-handshake) |
