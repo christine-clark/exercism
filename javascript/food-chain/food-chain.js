@@ -19,20 +19,31 @@ FoodChain.prototype.verse = function(line) {
   }
 
   var lineIndex = line - 1;
-  var fullVerse = ['I know an old lady who swallowed a ' + this.songLines[lineIndex][0] + '.'];
+  var fullVerse = [
+    'I know an old lady who swallowed a ' + 
+    this.songLines[lineIndex][0] + 
+    '.'
+  ];
 
   if (line === 1 || line === 8) {
     fullVerse.splice(1, 0, this.songLines[lineIndex][1]);
   } else {
     for (var i = 0; i <= lineIndex; i++) {
-      var tailLine = i === 1 ? ' that wriggled and jiggled and tickled inside her.' : '.';
+      var tailLine = i === 1 ? 
+        ' that wriggled and jiggled and tickled inside her.' : 
+        '.';
 
       if (i === 0 || i === lineIndex) {
         fullVerse.splice(1, 0, this.songLines[i][1]);
       }
 
       if (i !== lineIndex) {
-        fullVerse.splice(1, 0, 'She swallowed the ' + this.songLines[i+1][0] + ' to catch the ' + this.songLines[i][0] + tailLine);
+        fullVerse.splice(1, 0, 
+          'She swallowed the ' + 
+          this.songLines[i+1][0] + 
+          ' to catch the ' + 
+          this.songLines[i][0] + 
+          tailLine);
       }
     }
   }
@@ -42,7 +53,8 @@ FoodChain.prototype.verse = function(line) {
 };
 
 FoodChain.prototype.verses = function(startVerse, endVerse) {
-  if (!startVerse || typeof startVerse !== 'number' || !endVerse || typeof endVerse !== 'number') {
+  if (!startVerse || typeof startVerse !== 'number' || 
+    !endVerse || typeof endVerse !== 'number') {
     throw new Error('Verses must be a number');
   }
 
