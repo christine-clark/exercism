@@ -14,28 +14,21 @@ const Song = {
     ];
 
     const lineIndex = line - 1;
-    let fullVerse = [
-      'I know an old lady who swallowed a ' + 
-      songLines[lineIndex][0] + '.'
-    ];
+    const currentLine = songLines[lineIndex];
+    let fullVerse = [`I know an old lady who swallowed a ${currentLine[0]}.`];
 
     if (line === 1 || line === 8) {
-      fullVerse.splice(1, 0, songLines[lineIndex][1]);
+      fullVerse.splice(1, 0, currentLine[1]);
     } else {
       for (let i = 0; i <= lineIndex; i++) {
-        const tailLine = i === 1 ?
-          ' that wriggled and jiggled and tickled inside her.' :
-          '.';
+        const tailLine = i === 1 ? ' that wriggled and jiggled and tickled inside her.' : '.';
 
         if (i === 0 || i === lineIndex) {
           fullVerse.splice(1, 0, songLines[i][1]);
         }
 
         if (i !== lineIndex) {
-          fullVerse.splice(1, 0, 
-            'She swallowed the ' + songLines[i + 1][0] +
-            ' to catch the ' + songLines[i][0] + tailLine
-          );
+          fullVerse.splice(1, 0, `She swallowed the ${songLines[i + 1][0]} to catch the ${songLines[i][0]}${tailLine}`);
         }
       }
     }
