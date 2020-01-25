@@ -1,4 +1,4 @@
-var Acronyms = require('./acronym');
+const Acronyms = require('./acronym');
 
 describe('Acronyms are produced from', function () {
   it('phrase is an invalid string', function () {

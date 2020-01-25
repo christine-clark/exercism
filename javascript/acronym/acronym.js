@@ -1,7 +1,7 @@
 'use strict';
 
 const Acronyms = {
-  parse: (phrase) => {
+  parse: phrase => {
     if (!phrase || typeof phrase !== 'string') {
       throw new Error('Phrase must be a string');
     }
@@ -10,12 +10,10 @@ const Acronyms = {
     const words = phrase.split(/[\s-]|[a-z](?=[A-Z])/);
 
     if (words.length) {
-      acronym = words.map((word) => {
-        return word.charAt(0).toUpperCase();
-      });
+      acronym = words.map(word => word.charAt(0));
     }
 
-    return acronym.join('');
+    return acronym.join('').toUpperCase();
   }
 };
 
