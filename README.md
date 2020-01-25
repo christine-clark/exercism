@@ -16,3 +16,4 @@ If you are new to exercism, read more on [How It Works](http://exercism.io/how-i
 | JavaScript | [Space Age](https://github.com/christine-clark/exercism/tree/master/javascript/space-age) |
 | Ruby | [Acronym](https://github.com/christine-clark/exercism/tree/master/ruby/acronym) |
 | Ruby | [Anagram](https://github.com/christine-clark/exercism/tree/master/ruby/anagram) |
+| Ruby | [Beer Song](https://github.com/christine-clark/exercism/tree/master/ruby/beer-song) |
