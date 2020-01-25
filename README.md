@@ -17,3 +17,4 @@ If you are new to exercism, read more on [How It Works](http://exercism.io/how-i
 | Ruby | [Acronym](https://github.com/christine-clark/exercism/tree/master/ruby/acronym) |
 | Ruby | [Anagram](https://github.com/christine-clark/exercism/tree/master/ruby/anagram) |
 | Ruby | [Beer Song](https://github.com/christine-clark/exercism/tree/master/ruby/beer-song) |
+| Ruby | [Grade School](https://github.com/christine-clark/exercism/tree/master/ruby/grade-school) |
